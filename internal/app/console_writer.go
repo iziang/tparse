@@ -65,7 +65,7 @@ func newConsoleWriter(w io.Writer, format OutputFormat, disableColor bool) *cons
 		// "best available option" .. which is no colors. We can work around this by
 		// setting a color profile explicitly instead of relying on termenv to auto-detect.
 		// Ref: https://github.com/charmbracelet/lipgloss/issues/74
-		// Ref: https://github.com/mfridman/tparse/issues/76
+		// Ref: https://github.com/iziang/tparse/issues/76
 		lipgloss.SetColorProfile(termenv.TrueColor)
 
 		switch format {

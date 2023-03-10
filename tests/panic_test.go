@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/mfridman/tparse/internal/check"
-	"github.com/mfridman/tparse/parse"
+	"github.com/iziang/tparse/internal/check"
+	"github.com/iziang/tparse/parse"
 )
 
 func TestPanic(t *testing.T) {
@@ -23,42 +23,42 @@ func TestPanic(t *testing.T) {
 	}{
 		{
 			"test_01.json", expected{
-				"github.com/pressly/goose/v3/tests/e2e": true,
-			},
+			"github.com/pressly/goose/v3/tests/e2e": true,
+		},
 		},
 		{
 			"test_02.json", expected{
-				"github.com/mfridman/tparse/parse": true,
-			},
+			"github.com/iziang/tparse/parse": true,
+		},
 		},
 		{
 			"test_03.json", expected{
-				"github.com/mfridman/tparse/tests": true,
-			},
+			"github.com/iziang/tparse/tests": true,
+		},
 		},
 		{
 			"test_04.json", expected{
-				"github.com/mfridman/tparse/tests":  true,
-				"github.com/mfridman/tparse/ignore": false,
-				"github.com/mfridman/tparse/parse":  false,
-				"github.com/mfridman/tparse":        false,
-			},
+			"github.com/iziang/tparse/tests":  true,
+			"github.com/iziang/tparse/ignore": false,
+			"github.com/iziang/tparse/parse":  false,
+			"github.com/iziang/tparse":        false,
+		},
 		},
 		{
 			"test_05.json", expected{
-				"github.com/mfridman/tparse/tests":  true,
-				"github.com/mfridman/tparse/parse":  false,
-				"github.com/mfridman/tparse":        false,
-				"github.com/mfridman/tparse/ignore": false,
-			},
+			"github.com/iziang/tparse/tests":  true,
+			"github.com/iziang/tparse/parse":  false,
+			"github.com/iziang/tparse":        false,
+			"github.com/iziang/tparse/ignore": false,
+		},
 		},
 		{
 			"test_06.json", expected{
-				"github.com/mfridman/tparse/tests":  false,
-				"github.com/mfridman/tparse/parse":  true,
-				"github.com/mfridman/tparse":        false,
-				"github.com/mfridman/tparse/ignore": false,
-			},
+			"github.com/iziang/tparse/tests":  false,
+			"github.com/iziang/tparse/parse":  true,
+			"github.com/iziang/tparse":        false,
+			"github.com/iziang/tparse/ignore": false,
+		},
 		},
 	}
 

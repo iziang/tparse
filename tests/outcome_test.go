@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/mfridman/tparse/internal/check"
-	"github.com/mfridman/tparse/parse"
+	"github.com/iziang/tparse/internal/check"
+	"github.com/iziang/tparse/parse"
 )
 
 func TestFinalOutcome(t *testing.T) {
@@ -22,7 +22,7 @@ func TestFinalOutcome(t *testing.T) {
 		registry
 	}{
 		{"test_01.json", 1, registry{
-			"github.com/mfridman/tparse/tests": parse.ActionFail,
+			"github.com/iziang/tparse/tests": parse.ActionFail,
 		}},
 		{"test_02.json", 1, registry{
 			"github.com/astromail/rover/tests":          parse.ActionFail,

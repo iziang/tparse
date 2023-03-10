@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/mfridman/tparse/internal/check"
+	"github.com/iziang/tparse/internal/check"
 )
 
 func TestNewEvent(t *testing.T) {
@@ -133,7 +133,7 @@ func TestCachedEvent(t *testing.T) {
 	}{
 		{
 			// 0
-			`{"Time":"2018-10-24T08:30:14.566611-04:00","Action":"output","Package":"github.com/mfridman/tparse/tests","Output":"ok  \tgithub.com/mfridman/tparse/tests\t(cached)\n"}`,
+			`{"Time":"2018-10-24T08:30:14.566611-04:00","Action":"output","Package":"github.com/iziang/tparse/tests","Output":"ok  \tgithub.com/iziang/tparse/tests\t(cached)\n"}`,
 			true,
 		},
 		{
@@ -208,7 +208,7 @@ func TestCoverEvent(t *testing.T) {
 		},
 		{
 			// 6
-			`{"Time":"2022-05-23T23:07:54.485803-04:00","Action":"output","Package":"github.com/mfridman/tparse/tests","Output":"ok  \tgithub.com/mfridman/tparse/tests\t0.516s\tcoverage: 34.5% of statements in ./...\n"}`, true, 34.5,
+			`{"Time":"2022-05-23T23:07:54.485803-04:00","Action":"output","Package":"github.com/iziang/tparse/tests","Output":"ok  \tgithub.com/iziang/tparse/tests\t0.516s\tcoverage: 34.5% of statements in ./...\n"}`, true, 34.5,
 		},
 	}
 
@@ -381,7 +381,7 @@ func TestDiscardOutput(t *testing.T) {
 	tt := []string{
 		`{"Time":"2018-11-24T23:18:44.381562-05:00","Action":"output","Package":"time","Test":"TestMonotonicOverflow","Output":"=== RUN   TestMonotonicOverflow\n"}`,
 
-		`{"Time":"2018-10-28T23:41:31.939308-04:00","Action":"output","Package":"github.com/mfridman/tparse/parse","Test":"TestNewEvent","Output":"=== PAUSE TestNewEvent\n"}`,
+		`{"Time":"2018-10-28T23:41:31.939308-04:00","Action":"output","Package":"github.com/iziang/tparse/parse","Test":"TestNewEvent","Output":"=== PAUSE TestNewEvent\n"}`,
 
 		`{"Time":"2022-05-20T20:16:06.761846-04:00","Action":"output","Package":"github.com/pressly/goose/v3/tests/e2e","Test":"TestNowAllowMissingUpByOne","Output":"=== CONT  TestNowAllowMissingUpByOne\n"}`,
 	}

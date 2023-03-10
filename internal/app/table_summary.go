@@ -9,13 +9,13 @@ import (
 	"github.com/charmbracelet/lipgloss"
 	"github.com/olekukonko/tablewriter"
 
-	"github.com/mfridman/tparse/parse"
+	"github.com/iziang/tparse/parse"
 )
 
 type SummaryTableOptions struct {
 	// For narrow screens, remove common prefix and trim long package names vertically. Example:
-	// github.com/mfridman/tparse/app
-	// github.com/mfridman/tparse/internal/seed-up-down-to-zero
+	// github.com/iziang/tparse/app
+	// github.com/iziang/tparse/internal/seed-up-down-to-zero
 	//
 	// tparse/app
 	// tparse

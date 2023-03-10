@@ -129,7 +129,7 @@ func (e *Event) NoTestsWarn() bool {
 }
 
 // IsCached reports special event case for cached packages:
-// "ok  \tgithub.com/mfridman/tparse/tests\t(cached)\n"
+// "ok  \tgithub.com/iziang/tparse/tests\t(cached)\n"
 // "ok  \tgithub.com/mfridman/srfax\t(cached)\tcoverage: 28.8% of statements\n"
 func (e *Event) IsCached() bool {
 	return strings.HasPrefix(e.Output, "ok  \t") && strings.Contains(e.Output, "\t(cached)")
@@ -138,7 +138,7 @@ func (e *Event) IsCached() bool {
 // Cover reports special event case for package coverage:
 // "ok  \tgithub.com/mfridman/srfax\t(cached)\tcoverage: 28.8% of statements\n"
 // "ok  \tgithub.com/mfridman/srfax\t0.027s\tcoverage: 28.8% of statements\n"
-// "ok  \tgithub.com/mfridman/tparse/tests\t0.516s\tcoverage: 34.5% of statements in ./...\n"
+// "ok  \tgithub.com/iziang/tparse/tests\t0.516s\tcoverage: 34.5% of statements in ./...\n"
 func (e *Event) Cover() (float64, bool) {
 	var f float64
 	var err error

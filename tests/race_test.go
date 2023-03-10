@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/mfridman/tparse/internal/check"
-	"github.com/mfridman/tparse/parse"
+	"github.com/iziang/tparse/internal/check"
+	"github.com/iziang/tparse/parse"
 )
 
 func TestRaceDetected(t *testing.T) {
@@ -26,7 +26,7 @@ func TestRaceDetected(t *testing.T) {
 			"test_01", expected{"command-line-arguments": {"TestA"}},
 		},
 		{
-			"test_02", expected{"github.com/mfridman/tparse/parse": {"TestB", "TestElapsed"}},
+			"test_02", expected{"github.com/iziang/tparse/parse": {"TestB", "TestElapsed"}},
 		},
 		{
 			"test_03", expected{"debug/tparse-24": {}},

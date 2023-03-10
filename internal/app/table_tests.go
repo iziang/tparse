@@ -8,7 +8,8 @@ import (
 	"strings"
 
 	"github.com/charmbracelet/lipgloss"
-	"github.com/mfridman/tparse/parse"
+
+	"github.com/iziang/tparse/parse"
 )
 
 var (

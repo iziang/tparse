@@ -1,4 +1,4 @@
-ROOT := github.com/mfridman/tparse
+ROOT := github.com/iziang/tparse
 
 .PHONY: \
 	imports \

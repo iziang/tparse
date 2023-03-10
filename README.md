@@ -1,4 +1,4 @@
-# tparse  [![Actions](https://github.com/mfridman/tparse/workflows/CI/badge.svg)](https://github.com/mfridman/tparse)
+# tparse  [![Actions](https://github.com/iziang/tparse/workflows/CI/badge.svg)](https://github.com/iziang/tparse)
 
 A command line tool for analyzing and summarizing `go test` output.
 
@@ -16,9 +16,9 @@ To get additional info on passed tests run `tparse` with `-pass` flag. Tests are
 
 ## Installation
 
-    go install github.com/mfridman/tparse@latest
+    go install github.com/iziang/tparse@latest
 
-Or download the latest pre-built binary [here](https://github.com/mfridman/tparse/releases/latest).
+Or download the latest pre-built binary [here](https://github.com/iziang/tparse/releases/latest).
 
 ## Usage
 

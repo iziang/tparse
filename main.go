@@ -8,8 +8,8 @@ import (
 	"os"
 	"runtime/debug"
 
-	"github.com/mfridman/tparse/internal/app"
-	"github.com/mfridman/tparse/parse"
+	"github.com/iziang/tparse/internal/app"
+	"github.com/iziang/tparse/parse"
 )
 
 // Flags.

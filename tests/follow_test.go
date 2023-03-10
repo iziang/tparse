@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/mfridman/tparse/internal/app"
-	"github.com/mfridman/tparse/internal/check"
-	"github.com/mfridman/tparse/parse"
+	"github.com/iziang/tparse/internal/app"
+	"github.com/iziang/tparse/internal/check"
+	"github.com/iziang/tparse/parse"
 )
 
 func TestFollow(t *testing.T) {

@@ -6,7 +6,8 @@ import (
 	"strings"
 
 	"github.com/charmbracelet/lipgloss"
-	"github.com/mfridman/tparse/parse"
+
+	"github.com/iziang/tparse/parse"
 )
 
 // printFailed prints all failed tests, grouping them by package. Packages are sorted.
@@ -136,7 +137,7 @@ func (c *consoleWriter) styledHeader(status, packageName string) string {
 		Need to rethink how to best support multiple output formats across
 		CI, local terminal development and markdown
 
-		See https://github.com/mfridman/tparse/issues/71
+		See https://github.com/iziang/tparse/issues/71
 	*/
 	headerStyle := lipgloss.NewStyle().
 		BorderStyle(lipgloss.ThickBorder()).

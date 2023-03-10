@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/mfridman/tparse/internal/check"
-	"github.com/mfridman/tparse/parse"
+	"github.com/iziang/tparse/internal/check"
+	"github.com/iziang/tparse/parse"
 )
 
 func TestSummaryCounts(t *testing.T) {
