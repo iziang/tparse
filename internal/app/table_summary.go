@@ -7,8 +7,9 @@ import (
 	"strings"
 
 	"github.com/charmbracelet/lipgloss"
-	"github.com/mfridman/tparse/parse"
 	"github.com/olekukonko/tablewriter"
+
+	"github.com/mfridman/tparse/parse"
 )
 
 type SummaryTableOptions struct {
@@ -217,7 +218,7 @@ func findCommonPackagePrefix(packages []*parse.Package) string {
 	prefixLength := 0
 	for prefixLength = 0; prefixLength < len(packages[0].Summary.Package); prefixLength++ {
 		for i := 0; i < len(packages); i++ {
-			if len(packages[i].Summary.Package) == (prefixLength - 1) {
+			if len(packages[i].Summary.Package) == prefixLength {
 				goto End
 			}
 			if packages[0].Summary.Package[prefixLength] != packages[i].Summary.Package[prefixLength] {
