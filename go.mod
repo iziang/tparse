@@ -1,4 +1,4 @@
-module github.com/mfridman/tparse
+module github.com/iziang/tparse
 
 require (
 	github.com/charmbracelet/lipgloss v0.6.0
